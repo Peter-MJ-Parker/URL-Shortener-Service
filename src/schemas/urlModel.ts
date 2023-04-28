@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 const { model, Schema } = mongoose;
 
-const name = 'antiroll';
+const name = 'url_storage';
 export default model(
 	name,
 	new Schema({
