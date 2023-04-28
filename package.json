@@ -7,7 +7,8 @@
 	"scripts": {
 		"build": "tsc",
 		"start": "nodemon ./dist/server.js",
-		"rebuild": "tsc && nodemon ./dist/server.js"
+		"rebuild": "tsc && nodemon ./dist/server.js",
+		"pm2": "tsc && pm2 start ./dist/server.js --name URL-shortener"
 	},
 	"keywords": [],
 	"author": "",
@@ -23,6 +24,10 @@
 		"@types/shortid": "^0.0.29",
 		"@types/valid-url": "^1.0.4",
 		"nodemon": "^2.0.22"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Peter-MJ-Parker/URL-Shortener-Service.git"
 	},
 	"imports": {
 		"#config/*": [
