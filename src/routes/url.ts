@@ -4,7 +4,7 @@ import shortid from 'shortid';
 import Url from '#schemas/urlModel';
 import { env } from '#config/utils';
 
-const baseUrl = `http://localhost:${env.PORT}`;
+const baseUrl = `${env.BASE}:${env.PORT}`;
 export const urlRouter = express.Router();
 urlRouter.post('/shorten', async (req, res) => {
 	const { longUrl } = req.body;

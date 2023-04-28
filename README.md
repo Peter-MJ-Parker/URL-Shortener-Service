@@ -14,6 +14,7 @@ This can act as an api to use in other projects.
 - Create `.env` file in root directory
   - Specify a port with `PORT={PORT}`
   - Specify a MongoURI with `CONNECT={mongo string}`
+  - Specify your BASE with `BASE={ip address or domain}`
     - Do NOT include `{}` or spaces in these variables.
 - npm run build
   - Builds a JavaScript project from TypeScript files..

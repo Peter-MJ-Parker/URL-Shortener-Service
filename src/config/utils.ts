@@ -4,6 +4,7 @@ import { existsSync, readFileSync } from 'fs';
 export const env = load({
 	PORT: Number,
 	CONNECT: String,
+	BASE: String,
 });
 
 export async function dbConnect() {
